@@ -24,7 +24,6 @@
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -52,18 +51,21 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
 <!-- The following are just sample -->
 
-Description of the project in details.
+Meeting Calendar is an agenda that indicates when meetings will occur throughout a project. It has the date, time, individuals present, and what the meeting is for. This assists the team in collaborating, staying on schedule, and completing the project within the deadline.
 
 ### Key Components
 
-<!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 
-- Authentication & Authorization
-- CRUD Operations for Invetory System
+- Date
+- Time
+- Topic
+- People
+- Place
+- Goal
+- Notes
 
 ### Technology
 
@@ -149,11 +151,10 @@ AD-ProjectName
 
 ## Resources
 
-<!-- TODO: Add References -->
 
 | Title        | Purpose                                                                       | Link          |
 | ------------ | ----------------------------------------------------------------------------- | ------------- |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| N / A | N / A | N / A |
+| N / A | N / A | N / A |
+| N / A | N / A | N / A |
+| N / A | N / A | N / A |
