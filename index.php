@@ -1,5 +1,4 @@
 <?php
-<?php
 echo "<h2>Database Connection Checker</h2>";
 
 // MongoDB Checker
