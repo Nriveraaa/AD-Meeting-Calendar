@@ -1,8 +1,8 @@
 services:
-  AD-Meeting-Calendar:
+  ad-meeting-calendar:
     build:
       context: .
-    container_name: AD-Meeting-Calendar-service
+    container_name: ad-meeting-calendar-service
     ports:
       - "8000:8000"
     develop:
@@ -19,7 +19,7 @@ services:
 
   mongodb:
     image: mongo:latest
-    container_name: AD-Meeting-Calendar-mongodb
+    container_name: ad-meeting-calendar-mongodb
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: rootPassword
@@ -27,11 +27,11 @@ services:
     ports:
       - "27111:27017"
     volumes:
-      - AD-Meeting-Calendar-mongodb:/data/db/mongodb
+      - ad-meeting-calendar-mongodb:/data/db/mongodb
 
   postgresql:
     image: postgres:15
-    container_name: AD-Meeting-Calendar-postgresql
+    container_name: ad-meeting-calendar-postgresql
     restart: always
     environment:
       POSTGRES_USER: user
@@ -40,10 +40,10 @@ services:
     ports:
       - "5112:5432"
     volumes:
-      - AD-Meeting-Calendar-postgresql:/data/db/postgresql
+      - ad-meeting-calendar-postgresql:/data/db/postgresql
 
 volumes:
-  AD-Meeting-Calendar-mongodb:
+  ad-meeting-calendar-mongodb:
     driver: local
-  AD-Meeting-Calendar-postgresql:
+  ad-meeting-calendar-postgresql:
     driver: local
