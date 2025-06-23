@@ -6,13 +6,13 @@
 
 ## 1. Modifying Documentation: Update Readme
 - [ ] Check all the TODO Tasks
-- [ ] Delete `TODO` mark when done modifying
+- [x] Delete `TODO` mark when done modifying
 
 ## 2. Modifying Composer: Update `composer.json`
 Change the following:
-- [ ] your-username-here
-- [ ] project-name-here
-- [ ] add author/s
+- [x] your-username-here
+- [x] project-name-here
+- [x] add author/s
 ```json
 "authors": [
     {
