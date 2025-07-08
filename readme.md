@@ -114,7 +114,7 @@ AD-ProjectName
 |   └─ css
 |   |   └─ name.css
 |   └─ img
-|   |   └─ name.jpeg/.jpg/.webp/.png
+|   |   └─ mc.png
 |   └─ js
 |       └─ name.js
 └─ components
