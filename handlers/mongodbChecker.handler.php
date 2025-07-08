@@ -1,6 +1,11 @@
 <?php
+// Define BASE_PATH if not yet defined
+if (!defined('BASE_PATH')) {
+    define('BASE_PATH', realpath(__DIR__ . '/../'));
+    define('UTILS_PATH', realpath(BASE_PATH . '/utils'));
+}
 
-require_once UTILS_PATH . '/envSetter.util.php'; // Load .env values
+require_once UTILS_PATH . '/envSetter.util.php';
 
 try {
     $host = $databases['mongoHost'];
