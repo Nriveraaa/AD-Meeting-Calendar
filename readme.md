@@ -54,18 +54,19 @@ It is a simple way to organize schedules, set reminders for important dates, and
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
-
-Description of the project in details.
+It helps manage daily activities by keeping track of planned events and appointments. Users can easily view their schedules, make changes when needed, and stay updated on what’s coming next. It’s a helpful tool for staying on top of tasks and making sure nothing is missed.
 
 ### Key Components
 
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
+Event Creation – Lets users add and customize schedules or tasks.
 
-- Authentication & Authorization
-- CRUD Operations for Invetory System
+Reminders and Notifications – Sends alerts for upcoming events.
+
+Recurring Events – Allows automatic repetition of regular schedules.
+
+Shared Access – Lets multiple users view or manage the same schedule.
+
+Synchronization – Keeps everything updated across devices and platforms.
 
 ### Technology
 
