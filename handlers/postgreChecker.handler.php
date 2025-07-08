@@ -1,6 +1,12 @@
 <?php
+// Define BASE_PATH if not yet defined
+if (!defined('BASE_PATH')) {
+    define('BASE_PATH', realpath(__DIR__ . '/../'));
+    define('UTILS_PATH', realpath(BASE_PATH . '/utils'));
+}
 
-require_once UTILS_PATH . '/envSetter.util.php'; // Load .env values
+// Load the .env and variables
+require_once UTILS_PATH . '/envSetter.util.php';
 
 $host = $databases['pgHost'];
 $port = $databases['pgPort'];
