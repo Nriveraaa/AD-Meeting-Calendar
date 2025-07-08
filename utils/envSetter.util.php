@@ -1,21 +1,17 @@
 <?php
 
-require_once BASE_PATH . '/bootstrap.php';               // Load base path
-require_once BASE_PATH . '/vendor/autoload.php';         // Load Composer packages (like dotenv)
+require_once BASE_PATH . '/vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(BASE_PATH);     // Load .env file from project root
-$dotenv->load();                                          // Activate the .env variables
+$dotenv = Dotenv\Dotenv::createImmutable(BASE_PATH);
+$dotenv->load();
 
-// Distribute environment variables into an array
+// Create $databases array safely
 $databases = [
-    // PostgreSQL
-    'pgHost'     => $_ENV['PG_HOST'],
-    'pgPort'     => $_ENV['PG_PORT'],
-    'pgUser'     => $_ENV['PG_USER'],
-    'pgPassword' => $_ENV['PG_PASSWORD'],
-    'pgDB'       => $_ENV['PG_DB'],
-
-    // MongoDB
-    'mongoHost'  => $_ENV['MONGO_HOST'],
-    'mongoPort'  => $_ENV['MONGO_PORT'],
+    'pgHost' => $_ENV['PG_HOST'] ?? null,
+    'pgPort' => $_ENV['PG_PORT'] ?? null,
+    'pgUser' => $_ENV['PG_USER'] ?? null,
+    'pgPassword' => $_ENV['PG_PASSWORD'] ?? null,
+    'pgDB' => $_ENV['PG_DB'] ?? null,
+    'mongoHost' => $_ENV['MONGO_HOST'] ?? null,
+    'mongoPort' => $_ENV['MONGO_PORT'] ?? null,
 ];
