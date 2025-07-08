@@ -14,3 +14,8 @@ $databases = [
     'mongoHost'  => $_ENV['MONGO_HOST'] ?? '',
     'mongoPort'  => $_ENV['MONGO_PORT'] ?? '',
 ];
+
+// ✅ Add this line temporarily for debugging
+echo "<pre>";
+print_r($databases);
+echo "</pre>";
